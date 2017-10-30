@@ -61,6 +61,7 @@ header {
 
 /*Añadiendo estilos a la primera sección*/
 #start-section{
+  width: 100%;
   padding-top: 180px;
   padding-bottom: 50px;
   background-color: rgb(24,188,156);
@@ -105,7 +106,9 @@ header {
 }
 
 /*Añadiendo estilos a la segunda sección*/
-
+#portfolio-section{
+  width: 100%;
+}
 #image-container{
   display: inline-block;
   column-count: 3;
@@ -154,6 +157,7 @@ header {
 
 /*Añadiendo estilos a la tercera sección*/
 #about-section{
+  width: 100%;
   padding: 100px;
   background-color:rgb(24,188,156);
   color: rgb(255, 255, 255);
@@ -195,6 +199,7 @@ header {
 /* Añadiendo estilos a la cuarta sección */
 
 #contact-section {
+  width: 100%;
   padding: 50px 0px 100px 0px;
   text-align: left;
 
@@ -242,6 +247,7 @@ header {
   }
 /* Añadiendo estilos al pie de pagina*/
 footer {
+  width: 100%;
   background-color: rgb(44,62,80);
   color:rgb(255, 255, 255);
   font-size: 20px;
