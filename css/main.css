@@ -151,3 +151,43 @@ header {
   font-weight: 800;
   font-family:'Lato', sans-serif;
 }
+
+/*Añadiendo estilos a la tercera sección*/
+#about-section{
+  padding: 100px;
+  background-color:rgb(24,188,156);
+  color: rgb(255, 255, 255);
+  font-family:'Montserrat', sans-serif;
+}
+#about-section h2{
+  padding-bottom: 30px;
+  font-weight: 800;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+}
+#about-section p {
+  display: inline-block;
+  padding:70px 20px;
+  line-height: 28px;
+  text-align: justify;
+  font-size: 18px;
+
+}
+#about-section button {
+  display: block;
+  margin: auto;
+  padding: 12px 12px;
+  font-size: 20px;
+  font-family: inherit;
+  background-color: inherit;
+  border-radius: 5px;
+  border-style:solid;
+  border-color: rgb(255, 255, 255);
+  color: inherit;
+}
+
+#about-section button:hover {
+  background-color: rgb(255, 255, 255);
+  color:rgb(24,188,156);
+  transition: 0.5s;
+}
