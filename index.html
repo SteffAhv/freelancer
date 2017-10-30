@@ -4,73 +4,138 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <title>Freelancer</title>
+    <title>Freelancermine</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="assets/icons/icomoon/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Montserrat:400,900" rel="stylesheet">
   </head>
   <body>
         <header>
-            <span class="to-upper-case">start bootstrap</span>
+            <div class="title-header to-upper-case">start bootstrap</div>
             <nav>
-              <!--Adding a class to the navigation-bar-->
+              <!--Asignando una clase a la barra de navegación-->
               <ul class="nav-menu">
-                <li class="nav-options to-upper-case"><a class="remove-underline" href="#">portafolio</a></li>
-                <li class="nav-options to-upper-case"><a class="remove-underline"href="#">about</a></li>
-                <li class="nav-options to-upper-case"><a class="remove-underline"href="#">contact</a></li>
+                <li class="nav-options to-upper-case"><a class="remove-underline" href="#portfolio-section">portfolio</a></li>
+                <li class="nav-options to-upper-case"><a class="remove-underline"href="#about-section">about</a></li>
+                <li class="nav-options to-upper-case"><a class="remove-underline"href="#contact-section">contact</a></li>
               </ul>
             </nav>
         </header>
-        <!--Adding a class to the first section-->
-        <section class="start-section">
-            <figure></figure>
-            <h1>start bootstrap</h1>
-            <hr>
-            <p>web developer-graphic artist-user experience designer</p>
+        <!--Asignando una clase a la primera sección-->
+        <section id="start-section">
+            <figure>
+              <img src="assets/imgs/profile.png" alt="profile">
+            </figure>
+            <h1 class="to-upper-case main-title">start bootstrap</h1>
+            <div class="divider">
+              <hr class="left white-divider"/><span class="icon-star-full"></span><hr class="right white-divider" />
+            </div>
+            <p>Web Developer - Graphic Artist - User Experience Designer</p>
         </section>
-        <!--Adding a class to the second section-->
-        <section class="portfolio-section">
-            <h1 class="to-upper-case">portfolio</h1>
-            <hr>
-            <div>
-              <div class=""></div>
-              <div class=""></div>
-              <div class=""></div>
-              <div class=""></div>
-              <div class=""></div>
-              <div class=""></div>
+
+        <!--Asignando una clase a la segunda sección-->
+
+        <section id="portfolio-section">
+            <h2 class="to-upper-case">portfolio</h2>
+            <div class="divider">
+              <hr class="left"/><span class="icon-star-full"></span><hr class="right" />
+            </div>
+            <div id="image-container">
+              <!--Cada div contendra a la imagen y a la mascada que se usara para el hover-->
+              <div >
+                <img class="portfolio-images" src="assets/imgs/portfolio/cabin.png" alt="">
+                <div class="mascara">
+                   <span ></span>
+                   <a href="#" class="link"></a>
+                </div>
+              <div>
+                <img class="portfolio-images" src="assets/imgs/portfolio/game.png" alt="">
+                <div class="mascara">
+                   <span ></span>
+                   <a href="#" class="link"></a>
+              </div>
+              <div>
+                <img class="portfolio-images" src="assets/imgs/portfolio/cake.png" alt="">
+                <div class="mascara">
+                   <span ></span>
+                   <a href="#" class="link"></a>
+              </div>
+              <div>
+                <img class="portfolio-images" src="assets/imgs/portfolio/safe.png" alt="">
+                <div class="mascara">
+                   <span ></span>
+                   <a href="#" class="link"></a>
+              </div>
+              <div>
+                <img class="portfolio-images" src="assets/imgs/portfolio/circus.png" alt="">
+                <div class="mascara">
+                   <span ></span>
+                   <a href="#" class="link"></a>
+              </div>
+              <div>
+                <img class="portfolio-images" src="assets/imgs/portfolio/submarine.png" alt="">
+                <div class="mascara re-positioning">
+                   <span></span>
+                   <a href="#" class="link"></a>
+              </div>
             </div>
         </section>
-        <!--Adding a class to the third section-->
-        <section class="about-section">
-            <h1 class="to-upper-case">about</h1>
-            <hr>
+
+        <!--Asignando una clase a la tercera sección-->
+        <section id="about-section">
+            <h2 class="to-upper-case">about</h2>
+            <div class="divider ">
+              <hr class="left white-divider"/><span class="icon-star-full"></span><hr class="right white-divider" />
+            </div>
             <p>Freelancer is a free bootstrap theme<br>created by Start Bootstrap.The<br>download includes the complete source<br>files including HTML, CSS and<br> Javascript as well as optional LESS<br> stylesheets for easy customization.
             </p>
 
-            <p>Wheter you're a student looking to<br>showcase your work,a professional<br>looking to atracct clients,or a graphic<br>artist looking to share your projects,this<br>template is the perfect starting point!
+            <p>Wheter you're a student looking to<br>showcase your work,a professional<br>looking to atracct clients,or a graphic<br>artist looking to share your projects,this<br>template is the perfect starting point!<br><br>
             </p>
-            <div>Download Theme</div>
+            <button type="button" name="button"><span class="icon-download2"></span> Download Theme</button>
         </section>
-        <!--Adding a class to the fourth section-->
-        <section class="contact-section">
-            <h1 class="to-upper-case">contact me</h1>
-            <hr>
-            <p>Name</p>
-            <input type="text" name="" value="">
-            <p>Email-Address</p>
-            <input type="text" name="" value="">
-            <p>Phone Number</p>
-            <input type="text" name="" value="">
-            <p>Message</p>
-            <input type="text" name="" value="">
+        <!--Asignando una clase a la cuarta sección-->
+        <section id="contact-section">
+            <h2 class="to-upper-case">contact me</h2>
+            <div class="divider">
+              <hr class="left"/><span class="icon-star-full"></span><hr class="right" />
+            </div>
+            <div id="form">
 
-            <button type="button" name="button">send</button>
+              <input type="text" type="text" placeholder="Name" >
+
+              <input type="text" type="text" placeholder="E-mail" >
+
+              <input type="text" type="text" placeholder="Number" >
+
+              <input type="text" type="text" placeholder="Message" >
+
+            </div>
+            <button type="button" name="button">Send</button>
         </section>
 
         <footer>
-
-        </footer>
+          <!--Dividimos el footer en tres divs principales y les asignamos una misma clase-->
+              <div class="footer-boxes">
+                <h2 class="to-upper-case">location</h2>
+                <p>3481 Melrose Place</p>
+                <p>Beverly Hills, CA 90210</p>
+              </div>
+              <div class="footer-boxes footer-icons">
+                <h2 class="to-upper-case">around the web</h2>
+                <span class="icon-facebook"></span></li>
+                <span class="icon-google-plus"></span></li>
+                <span class="icon-twitter"></span></li>
+                <span class="icon-linkedin2"></span></li>
+                <span class="icon-dribbble"></span></li>
+              </div>
+              <div class="footer-boxes">
+                <h2 class="to-upper-case">about Freelancer</h2>
+                <p>Freelance is a free to use, open source</p>
+                <p>Bootstrap theme created by <a class="remove-underline change-color"href="#">Start</a></p>
+                <a class="remove-underline change-color"href="#">Bootstrap</a>
+              </div>
+          </footer>
 
   </body>
 </html>
