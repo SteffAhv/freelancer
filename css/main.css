@@ -215,6 +215,10 @@ header {
   border-bottom: 1px solid #eee;
   font-size: 25px;
 }
+/*Eliminando el borde azul por default del input*/
+#contact-section input:focus{
+	outline:0px;
+}
 
 #form {
   padding: 70px 0px 120px 250px;
@@ -230,4 +234,56 @@ header {
   margin-left: 23%;
   border-radius: 10px;
   border-style: none;
+}
+  #contact-section button:active{
+    border-radius: 10px;
+    border-color: rgba(82, 172, 33, 0.81);
+    background-color: rgb(38, 130, 19);
+  }
+/* Añadiendo estilos al pie de pagina*/
+footer {
+  background-color: rgb(44,62,80);
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  font-family:'Lato', sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.footer-boxes{
+  display: inline-block;
+  width: 33%;
+  padding: 30px 30px 70px 30px;
+  vertical-align: text-top;
+
+}
+footer h2{
+  padding: 25px 25px 50px 25px;
+}
+
+.footer-icons span {
+  padding: 15px;
+  margin:2px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 100px;
+}
+.fa-facebook, .fa-dribbble, .fa-linkedin, .fa-twitter {
+  padding: 5px;
+}
+
+
+/* Añadiendo efecto hover a los iconos del footer*/
+.footer-icons span:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(24,188,156);
+  transition: 0.5s;
+}
+
+footer .change-color {
+color:rgb(24,188,156);
+}
+.copyright {
+  font-size: 17px;
+  padding: 20px;
 }
