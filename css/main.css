@@ -1,3 +1,60 @@
 /*
  * Estilos de tu proyecto
  */
+
+ /*Seteando todo el documento*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* Clases Reutilizables */
+
+.to-upper-case {
+  text-transform: uppercase;
+}
+.remove-underline{
+  text-decoration: none;
+  color: inherit;
+}
+/* Asignando un ancho al cuerpo*/
+body{
+  width: 100%;
+}
+/*Añadiendo estilos al header*/
+header {
+  position: fixed;
+  width: 100%;
+  z-index:1000;
+  background:rgb(44,62,80);
+  /*Height of header*/
+  padding:10px;
+  color:rgb(255, 255, 255);
+  font-weight:800;
+  font-family: 'Lato', sans-serif;
+}
+.title-header {
+ margin-left:-60%;
+  font-size:30px;
+  display: inline-block;
+  transform: translateY(50%);
+}
+/* Añadiendo estilos navigation-bar*/
+.nav-menu{
+  transform: translateY(-50%);
+  padding-right: 100px;
+  margin-right: -65%;
+}
+.nav-options {
+  display: inline-block;
+  padding:15px;
+  background:rgb(44,62,80);
+}
+/*Añadiendo efecto hover a las opciones de la barra de navegación*/
+.nav-menu a:hover {
+  color:rgb(24,188,156);
+}
+.nav-menu a:active {
+  color: rgb(255, 255, 255);
+}
