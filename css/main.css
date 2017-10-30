@@ -82,12 +82,12 @@ header {
 .left {
 	float:left;
   height: 8px;
-  background: black;
+  background:rgb(44,62,80);
 }
 .right {
 	float:right;
   height: 8px;
-  background: black;
+  background:rgb(44,62,80);
 }
 .white-divider {
   background: rgb(255, 255, 255);
@@ -136,6 +136,7 @@ header {
   margin-left: -80%;
   margin-top: -100%;
   padding: 100%;
+  color: rgb(255, 255, 255);
 }
 .mascara i:hover{
   opacity: 1;
@@ -147,6 +148,63 @@ header {
 .mascara:hover {
   background:rgb(24,188,156);
   transition: all 0.3s ease-in-out;
+}
+/*Estilos del overlay*/
+
+.overlay{
+  display: none;
+  opacity: 0;
+}
+.overlay:target {
+  opacity: 1;
+  display: block;
+  position: fixed;
+  z-index: 1001;
+  background:rgb(255,255,255);
+  top:0px;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-family:'Lato', sans-serif;
+
+}
+.overlay h2{
+  margin: 0px 15px;
+  margin-top:-8%;
+}
+.img-overlay{
+  margin: auto;
+  width:60%;
+  height:40%;
+}
+.img-overlay p {
+  padding: 15px;
+}
+.overlay a {
+  font-size: 45px;
+  float: right;
+}
+.overlay img {
+  padding: 15px;
+  width:400px;
+  height: 60%;
+  box-sizing: border-box;
+}
+#close{
+  float: left;
+  padding: 10px;
+  background-color:rgb(24,188,156);
+  margin-top: -50%;
+  margin-left: 1%;
+  border-style: none;
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-style:outset;
 }
 #portfolio-section h2{
   padding: 80px 0px 10px 0px;
